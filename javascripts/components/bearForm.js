@@ -33,6 +33,12 @@ const outPutBearInfo = (e) => {
     let ImageUrl = document.getElementById("imageUrl").value;
     bearData.bearDenSetter(bearName, ImageUrl);
     bearRiver.printRiverBears();
+    resetForm();
+}
+
+//resets the form
+const resetForm = () => {
+    buildBearForm();
 }
 
 export default {

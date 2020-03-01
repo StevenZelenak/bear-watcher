@@ -1,1 +1,5 @@
-console.log("I am the javascript");
+const init = () => {
+
+}
+
+init();

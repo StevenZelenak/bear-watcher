@@ -1,5 +1,7 @@
 import utils from "../helpers/utils.js";
 import bearData from "../helpers/data/bearData.js";
+import bearRiver from "./bearRiver.js";
+
 
 
 //prints the form 
@@ -30,6 +32,7 @@ const outPutBearInfo = (e) => {
     let bearName = document.getElementById("bearName").value;
     let ImageUrl = document.getElementById("imageUrl").value;
     bearData.bearDenSetter(bearName, ImageUrl);
+    bearRiver.printRiverBears();
 }
 
 export default {

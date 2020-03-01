@@ -1,4 +1,6 @@
 import utils from "../helpers/utils.js";
+import bearData from "../helpers/data/bearData.js";
+
 
 //prints the form 
 const buildBearForm = () => {
@@ -27,8 +29,7 @@ const outPutBearInfo = (e) => {
     e.preventDefault();
     let bearName = document.getElementById("bearName").value;
     let ImageUrl = document.getElementById("imageUrl").value;
-
-    console.log(bearName, ImageUrl);
+    bearData.bearDenSetter(bearName, ImageUrl);
 }
 
 export default {
